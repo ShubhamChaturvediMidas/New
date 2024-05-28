@@ -1,0 +1,153 @@
+//Setup Commands
+//1 Configure Git with your username and email:
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+
+
+//2 Check your configuration:
+git config --list
+
+
+//Repository Commands
+// 1 Initialize a new Git repository:
+git init
+
+
+// 2 Clone an existing repository:
+git clone https://github.com/user/repo.git
+
+
+
+//Basic Commands
+// 1 Check the status of your files:
+git status
+
+
+// 2 Add files to staging area:
+git add file1 file2
+git add .  # Add all changes
+
+
+// 3 Commit changes:
+git commit -m "Your commit message"
+
+
+// 4 View commit history:
+git log
+
+
+//Branching and Merging
+// 1 Create a new branch:
+git branch new-branch
+
+
+// 2 Switch to a branch:
+git checkout new-branch
+
+
+// 3 Create and switch to a new branch:
+git checkout -b new-branch
+
+
+// 4 Merge a branch into the current branch:
+git merge branch-name
+
+
+// 5 Delete a branch:
+git branch -d branch-name
+
+
+//Remote Repositories
+// 1 Add a remote repository: 
+git remote add origin https://github.com/user/repo.git
+
+
+// 2 View remote repositories:
+git remote -v
+
+
+// 3 Fetch changes from remote:
+git fetch
+
+
+// 4 Push changes to remote:
+git push origin branch-name
+
+
+// 5 Pull changes from remote:
+git pull origin branch-name
+
+
+//Stashing and Cleaning
+// 1 Stash changes:
+git stash
+
+
+// 2 Apply stashed changes:
+git stash apply
+
+
+// 3 List stashes:
+git stash list
+
+
+// 4 Drop a stash:
+git stash drop
+
+
+// 5 Remove untracked files:
+git clean -f
+
+
+//Undoing Changes
+// 1 Unstage a file:
+git reset file
+
+
+// 2 Undo last commit but keep changes:
+git reset --soft HEAD~1
+
+
+// 3 Undo last commit and discard changes:
+git reset --hard HEAD~1
+
+
+// 4 Revert a specific commit:
+git revert commit-id
+
+
+//Viewing Differences
+// 1 Show changes in working directory:
+git diff
+
+
+// 2 Show changes between commits:
+git diff commit1 commit2
+
+
+//Tagging
+// 1 Create a new tag:
+git tag v1.0
+
+
+// 2 List tags:
+git tag
+
+
+// 3 Push tags to remote:
+git push origin --tags
+
+
+//Advanced Commands
+// 1 Rebase a branch:
+git rebase branch-name
+
+
+// 2 Interactive rebase:
+git rebase -i HEAD~n  # n is the number of commits to rebase
+
+
+// 3 Cherry-pick a commit:
+git cherry-pick commit-id
+
+
